@@ -12,7 +12,7 @@ const App = () => {
    try{
     setLoading(true)
     setError(null)
-    const response = await fetch(`http://www.omdbapi.com/?s=${search}&apikey=63bba5fe`)
+    const response = await fetch(`https://www.omdbapi.com/?s=${search}&apikey=63bba5fe`)
 
     const data = await response.json()
 
