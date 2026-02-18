@@ -56,8 +56,7 @@ const App = () => {
         <img src={movie.Poster} alt={movie.Title} width="100" />
         <h3>{movie.Title}</h3>
         <p>{movie.Year}</p>
-        <p>{movie.Genre}</p>
-        <p>{movie.Director}</p>
+        
       </div>
     ))}
     </div>
