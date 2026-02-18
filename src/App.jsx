@@ -53,7 +53,11 @@ const App = () => {
     <div className="movies-container">
       {movies.map((movie) => (
       <div className='movie-card' key={movie.imdbID}>
-        <img src={movie.Poster} alt={movie.Title} width="100" />
+      <img
+      src={movie.Poster !== "N/A" ? movie.Poster : "https://via.placeholder.com/300"}
+      alt={movie.Title}
+    />
+
         <h3>{movie.Title}</h3>
         <p>{movie.Year}</p>
         
